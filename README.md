@@ -5,4 +5,4 @@ I created 2 spotify plalist 1 containing  almost 75% of songs that I hear freque
 # LIkeattribute.py
 I added an extra column "Target" to the first CSV file and gave the value 1.This means they belong to my favorite songs category.After that I added a column "Target" to Second CSV file gave the value 0. then I combined these to CSV in to one by appending.I removed all unwanted data from the dataframe like albumn, Track_id etc. I checked with both logistic regression Model and  K-Nearest Neighbor Machine Learning Model to predict.My K-Nearest Neighbor Machine Learning Model
 had a better precision with 75% so i decided to go for it  and  predicted the Song like of my choice with that 
-# I advice you to use jupyter notebooks to do this one So you can run each and every step one after another   
+# I advice you to use jupyter notebooks for doing this.  

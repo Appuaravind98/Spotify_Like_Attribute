@@ -3,16 +3,13 @@
 
 # In[ ]:
 
-
-get_ipython().system('pip3 install pandas')
-get_ipython().system('pip3 install spotipy')
 import pandas as pd 
 import spotipy 
 from spotipy.oauth2 import SpotifyClientCredentials 
 sp = spotipy.Spotify() 
 
-cid ="e12f9ec40fe84d26b7b1755b1be0f3d7" 
-secret = "de818023729647968d47bdfbdf607b3f" 
+cid ="YOUR_CLIENT_ID" 
+secret = "YOUR_CLIENT_SECRET" 
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret) 
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) 
 sp.trace=False
@@ -21,7 +18,7 @@ sp.trace=False
 # In[ ]:
 
 
-sp.user_playlist_tracks("31obxjrwpdtksnjtof7oopbelnwq", "7K3yIPMdOZcAtbev57z6ID")
+sp.user_playlist_tracks("USERNAME", "PLAYLIST_ID")
 
 
 # In[ ]:
@@ -62,7 +59,7 @@ def analyze_playlist(creator, playlist_id):
 # In[ ]:
 
 
-analyze_playlist("31obxjrwpdtksnjtof7oopbelnwq", "7K3yIPMdOZcAtbev57z6ID").to_csv("unLikedSongs.csv", index = False)
+analyze_playlist("USERNAME", "PLAYLIST_ID").to_csv("LikedSongs.csv", index = False)
 
 
 # In[ ]:
